@@ -1,0 +1,23 @@
+{
+    "name": "msheng/yii2-redlock",
+    "keywords": ["yii2", "Redlock", "redis"],
+    "description": "Trait for easier Redlock integration",
+    "homepage": "https://github.com/Yemsheng/yii2-redlock",
+    "minimum-stability": "stable",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "msheng",
+            "email": "msheng.ye@foxmail.com",
+            "homepage": "https://github.com/Yemsheng"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"msheng\\redlock\\": "src/"}
+    },
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "ronnylt/redlock-php": "dev-master"
+    }
+}
