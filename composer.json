@@ -1,7 +1,7 @@
 {
     "name": "msheng/yii2-redlock",
     "keywords": ["yii2", "Redlock", "redis"],
-    "description": "Trait for easier Redlock integration",
+    "description": "Class for easier Redlock integration",
     "homepage": "https://github.com/Yemsheng/yii2-redlock",
     "minimum-stability": "stable",
     "type": "yii2-extension",
