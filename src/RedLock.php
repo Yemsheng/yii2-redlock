@@ -1,9 +1,8 @@
 <?php
 
-namespace msheng\RedLock
+namespace msheng\RedLock;
 
-require_once __DIR__ . './../../ronnylt/redlock-php/src/RedLock.php';
-
+use RedLock\RedLock as SigneRedLock;
 
 use yii\base\Component;
 
@@ -15,7 +14,7 @@ class RedLock extends Component
 
     private function getRedlock(){
         if(!$this->_redlock){
-            $this->_redlock = new \RedLock($this->servers);
+            $this->_redlock = new SigneRedLock($this->servers);
         }
         return $this->_redlock;
     }
