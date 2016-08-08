@@ -3,6 +3,7 @@
     "keywords": ["yii2", "Redlock", "redis"],
     "description": "Class for easier Redlock integration",
     "homepage": "https://github.com/Yemsheng/yii2-redlock",
+    "minimum-stability": "dev",
     "type": "yii2-extension",
     "license": "MIT",
     "authors": [
@@ -17,6 +18,6 @@
     },
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "ronnylt/redlock-php": "@dev"
+        "ronnylt/redlock-php": "dev-master"
     }
 }
