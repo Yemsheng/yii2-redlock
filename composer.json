@@ -14,7 +14,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"msheng\\redlock\\": "src/"}
+        "psr-4": {"msheng\\RedLock\\": "src/"}
     },
     "require": {
         "yiisoft/yii2": "~2.0.0",
