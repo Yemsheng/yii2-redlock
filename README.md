@@ -5,14 +5,23 @@ A redlock for Yii2, distributed locks with Redis
 
 Based on [Redlock-rb](https://github.com/antirez/redlock-rb) by [Salvatore Sanfilippo](https://github.com/antirez) and [signe redlock-php](https://github.com/signe/redlock-php)
 
+## Installation
 
-## Usage
+To install run:
+```
+    composer require "msheng/yii2-redlock:~1.0.0"
+```
+Or add this line to *require* section of composer.json:
+```
+    "msheng/yii2-redlock": "~1.0.0"
+```
 
-### project
+
+## project
 
 Your project need to be an [yii2-app-advanced](https://github.com/yiisoft/yii2-app-advanced) , and here is the [guide](https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/start-installation.md)
 
-### main.php
+## main.php
 
 In common/config/main.php or main-local.php
 
@@ -42,7 +51,7 @@ In common/config/main.php or main-local.php
 ],
 ```
 
-###
+## Usage
 
 ```PHP
 <?php
