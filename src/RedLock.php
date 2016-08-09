@@ -12,8 +12,9 @@ class RedLock extends Component
 
     private $_redlock;
 
-    private function getRedlock(){
-        if(!$this->_redlock){
+    private function getRedlock()
+    {
+        if (!$this->_redlock) {
             $this->_redlock = new SigneRedLock($this->servers);
         }
         return $this->_redlock;
@@ -22,7 +23,7 @@ class RedLock extends Component
     public function init()
     {
         $servers = [];
-        foreach ($this->servers as $server){
+        foreach ($this->servers as $server) {
             $servers[] = [$server['hostname'], $server['port'], $server['timeout']];
         }
         $this->servers = $servers;
@@ -43,15 +44,18 @@ class RedLock extends Component
      * resource, the name of the locked resource as specified by the user.
      * token, a random token value which is used to safe reclaim the lock.
      */
-    public function lock($resource, $ttl){
+    public function lock($resource, $ttl = 10000)
+    {
         $redlock = $this->getRedlock();
         return $redlock->lock($resource, $ttl);
     }
 
     /**
-     * @param array $lock. The param that "lock" function return
+     * @param array $lock . The param that "lock" function return
+     * @return bool
      */
-    public function unlock(array $lock){
+    public function unlock(array $lock)
+    {
         $redlock = $this->getRedlock();
         return $redlock->unlock($lock);
     }
