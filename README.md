@@ -39,12 +39,12 @@ In common/config/main.php or main-local.php
             [
                 'hostname' => '127.0.0.1',
                 'port' => 6389,
-                'timeout' => 0.05,
+                'timeout' => 0.5,
             ],
             [
                 'hostname' => '127.0.0.1',
                 'port' => 6399,
-                'timeout' => 0.05,
+                'timeout' => 0.5,
             ]
         ]
     ]
